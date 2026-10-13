@@ -1,0 +1,46 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root { background: #02060d; color: #bfeaff; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.canvas-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.scroll-space { position: relative; z-index: 1; }
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 8vh;
+  text-align: center;
+  pointer-events: none;
+}
+
+.hud-text {
+  font-size: 0.8rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #5fd6ff;
+  opacity: 0.8;
+}
+
+.hud-corner {
+  position: fixed;
+  z-index: 2;
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  color: #3aa8d4;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.hud-corner.tl { top: 20px; left: 24px; }
+.hud-corner.tr { top: 20px; right: 24px; }
